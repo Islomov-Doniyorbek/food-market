@@ -79,7 +79,6 @@ body {
     padding: 15px 5px 5px 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 15px;
     overflow-x: auto;
 }
@@ -426,6 +425,7 @@ body {
     .tip {
         width: 40px;
         font-size: 13px;
+        margin: 0 8px;
     }
     .cardContainer {
         grid-template-columns: repeat(1, 1fr);

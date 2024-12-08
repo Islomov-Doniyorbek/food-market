@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MURODBEK MARKET</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <span><img src="./picts/logoo.jpg" alt="12"></span>
+                <span><a href="#">Menyu</a></span>
+                <span><a href="./index.html" onclick="alert(`Bu bo'lim ishga tushmagan`)">Filiallar</a></span>
+                <span><a href="tel:+998888888888"><i class="fa fa-phone"></i>+998888888888</a></span>
+                <span id="limon" onclick="basket()"><i class="fa fa-shopping-cart"></i> Savat <div id="total">0 ta</div></span>
+            </div>
+           <div class="wrap">
+                <div class="left">
+                    <h1>Siz qidirgan sifatli mahsulotlar</h1>
+                </div>
+                <div class="right">
+                    <img src="./picts/hero-burger.png" alt="asasasasasassassaa">
+                </div>
+           </div>
+        </div>
+        <div class="section">
+            <div class="types">
+                <div class="tip" id="all">Hammasi</div>
+                <div class="tip" id="meva">Mevalar</div>
+                <div class="tip" id="veg">Sabzavotlar</div>
+                <div class="tip" id="drinks">Ichimliklar</div>
+                <div class="tip" id="non">Nonlar</div>
+                <div class="tip" id="makaron">Makaronlar</div>
+                <div class="tip" id="donuts">Shirinliklar</div>
+            </div>
+            <div class="products">
+                <div class="title"></div>
+                <div class="cardContainer">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <h2>
+                    Ijtimoiy tarmoqlarda ham bizni kuzatib boring
+                </h2>
+                <div class="img">
+                    <img src="./picts/logoo.jpg" alt="121212">
+                </div>
+            </div>
+            <div class="icons">
+                <a href="#" class="icon">
+                    <i class="fa fa-telegram">&nbsp;Telegram</i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa fa-instagram">&nbsp;Instagram</i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa fa-facebook">&nbsp;Facebook</i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa fa-twitter">&nbsp;Twitter</i>
+                </a>
+            </div>
+        </div>
+        <div class="market">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head">
+                    <p>My Cart <i onclick="closeBasket()" class="fa fa-close yopish"></i></p>
+                </div>
+                <div id="cartItem"></div>
+                <div class="foot">
+                    <h3>Itogo:</h3> 
+                    <h4 id="total">0 uzs</h4>
+                </div>
+                <button id="pay">To'lov qilish</button>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

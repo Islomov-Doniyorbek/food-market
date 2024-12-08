@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    
+}
+.container {
+    position: relative;
+    overflow-x: hidden;
+}
+.container .header {
+    position: relative;
+    height: 100vh;
+}
+.header .nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 255;
+    background: rgba(255, 255, 255, 0.334);
+    width: 100%;
+}
+.nav img {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+.nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1.5px solid teal;
+    padding-left: 2.5px;
+    position: relative;
+    text-decoration: none;
+    color: teal;
+    font-weight: 700;
+}
+.nav .fa {
+    color: green;
+    margin-right: 10px;
+}
+.header .wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.wrap .right {
+    background: teal;
+    position: relative;
+}
+.right img {
+    position: absolute;
+}
+.wrap .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 45px;
+    background: white;
+}
+.section {
+    padding: 35px 0 0 0;
+    position: relative;
+}
+.section .types {
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid transparent;
+    border-top: 1px solid silver;
+    position: relative;
+    padding: 15px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+}
+.types .tip {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: teal;
+    background: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 800;
+}
+.types .tip:hover {
+    border-radius: 8px;
+    position: relative;
+    background: teal;
+    color: azure;
+}
+.products {
+    position: relative;
+    width: 100%;
+}
+.products .cardContainer  {
+    position: relative;
+    display: grid;
+    width: 100%;
+    /* min-height: 100vh; */
+    flex-grow: 50%;
+    padding: 12px;
+    gap: 15px;
+}
+.cardContainer .card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1.5px solid silver;
+    border-radius: 10px;
+    background: linear-gradient(180deg, teal, green);
+    padding: 0 5px 0 10px;
+    gap: 10px;
+}
+.cardContainer .card .imgBox {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgBox img {
+    position: relative;
+    border-radius: 8px;
+    width: 80%;
+    height: 80%;
+}
+.cardContainer .card .contentBox {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.card p {
+    transition: 1.2s;
+    position: relative;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+
+}
+.card button {
+    position: relative;
+    padding: 5px;
+    font-size: 18px;
+    background: teal;
+    color: white;
+    border: 1px solid silver;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.market {
+    transition: 1.1s;
+    position: fixed;
+    top: 35px;
+    left: -100%;
+    display: flex;
+    width: 100%;
+}
+.qayt {
+    position: fixed;
+    left: 0%;
+}
+.ortga {
+    position: fixed;
+    left: -100%;
+}
+
+.footer {
+    position: relative;
+    padding: 5px;
+    display: grid;
+    height: 600px;
+}
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content h2 {
+    font-size: 30px;
+    color: teal;
+}
+.content a {
+    margin-top: 10px;
+    position: relative;
+    text-decoration: none;
+}
+.content a button {
+    cursor: pointer;
+    padding: 10px 16px 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: teal;
+    border: 1.5px solid teal;
+    background: white;
+    transition: ease 0.9s;
+}
+.content button:hover {
+    background: orangered;
+    color: azure;
+    box-shadow: 0 0 50px 8px orangered;
+}
+
+
+
+
+@media (min-width:1100px){
+    #root {
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        height: 500px;
+        overflow: auto;
+    }
+    .sidebar {
+        width: 25%;
+        margin-left: 20px;
+        padding: 15px;
+        text-align: center;
+        background-color: #eee;
+        border-radius: 8px;
+    }
+    .cart-item h2 {
+        font-size: 12px;
+
+    }
+    .nav {
+        gap: 20px;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+    .wrap .right {
+        width: 45%;
+        height: 100%;
+    }
+    .wrap .left {
+        width: 55%;
+        height: 100%;
+    }
+    .right img {
+        left: -255px;
+        top: 25px;
+        zoom: 0.8;
+    }
+    .left h1 {
+        position: relative;
+        font-size: 68px;
+        font-weight: 800;
+        color: teal;
+    }
+    .tip {
+        width: 300px;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+        grid-template-rows: repeat(2, 1fr);
+        width: 250px;
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img img {
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+}
+@media (max-width:1099px){
+    #root {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        height: 500px;
+        overflow: auto;
+    }
+    .sidebar {
+        width: 50%;
+        margin-left: 15px;
+        padding: 10px;
+        text-align: center;
+        background-color: #eee;
+        border-radius: 8px;
+        
+    }
+    .nav {
+        gap: 15px;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+    .wrap {
+        flex-direction: column;
+    }
+    .wrap .right {
+        width: 100%;
+        height: 40%;
+    }
+    .wrap .left {
+        width: 100%;
+        height: 60%;
+    }
+    .right img {
+        position: absolute;
+        top: -200px;
+        width: 600px;
+        height: 600px;
+    }
+    .left h1 {
+        position: relative;
+        font-size: 68px;
+        font-weight: 800;
+        color: teal;
+    }
+    .tip {
+        width: 200px;
+        font-size: 18px;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        height: 300px;
+    }
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img img {
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+}
+@media (max-width:548px){
+    #root {
+        width: 50%;
+        height: 500px;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        /* scrollbar-width: thin;
+        scrollbar-color: blue orange; */
+    }
+      
+    .sidebar {
+        width: 50%;
+        margin-left: 10px;
+        padding: 8px;
+        text-align: center;
+        background-color: #eee;
+        border-radius: 4px;
+    }
+    .header {
+        width: 100%;
+    }
+    .nav {
+        gap: 3px;
+    }
+    .nav a {
+        font-size: 14px;
+    }
+    .wrap .right {
+        width: 100%;
+        height: 45%;
+    }
+    .wrap .left {
+        width: 100%;
+        height: 55%;
+    }
+    .right img {
+        top: -50px;
+        width: 400px;
+        height: 400px;
+    }
+    .left h1 {
+        position: relative;
+        font-size: 68px;
+        font-weight: 800;
+        color: teal;
+    }
+    .tip {
+        width: 40px;
+        font-size: 13px;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+        height: 500px;
+    }
+
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img img {
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+}
+
+.footer .icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.icons .icon {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: teal;
+    text-decoration: none;
+}
+
+
+.head {
+    background-color:green;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: azure;
+    display: flex;
+    align-items: center;
+    border: 8px ridge teal;
+
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    color: green;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* .foot h3 {
+    font-size: 15px;
+} */
+
+#cartItem {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#limon {
+    cursor: pointer;
+    color: brown;
+    font-size: 18px;
+    font-weight: 700;
+}
+.yopish {
+    font-size: 20px;
+    color: azure;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#pay {
+    position: relative;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid green;
+    background: teal;
+    font-size: 18px;
+    color: lime;
+    cursor: pointer;
+}
